@@ -1,0 +1,2303 @@
+@font-face{
+    src:local("Segoe MDL2 Assets"),
+        url(/font/SegoeMDL2Assets/segmdl2.woff) format('woff'),
+        url(/font/SegoeMDL2Assets/segmdl2.ttf) format('truetype'),
+        url(/font/SegoeMDL2Assets/segmdl2.otf) ,
+        url(/font/SegoeMDL2Assets/segmdl2.eot);
+    font-family: icon;
+    font-style: normal;
+}
+.icon{
+    line-height: 1;
+    font-weight: normal;
+    font-style: normal;
+    font-family: icon;
+    text-transform: none;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+#top-menu #mobile #button-menu::after {
+	font-family: icon;
+	content: "\E700";
+	font-size: 1.6em;
+}
+#top-menu #mobile #button-menu {
+	padding: 1em;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+#mobile #right-area #shopping-cart::before {
+	font-family: icon;
+	content: "\E7BF";
+}
+
+#mobile #right-area #search-button:after {
+	font-family: icon;
+	content: "\E721";
+}
+
+#ms #right-area #sign-in::after {
+}
+
+#ms #right-area #shopping-cart {
+	vertical-align: middle;
+}
+
+#ms #right-area #search-button {
+	display: inline-block;
+	position: relative;
+	left: -2em;
+	vertical-align: middle;
+}
+
+#ms #right-area #search-button::after {
+	content: "\E721";
+}
+
+/* style.css (1, 7) */
+
+body {
+    font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    background-color: #171717;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#top-menu {
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+#top-menu.extended {
+	background-color: white;
+	color: black;
+}
+
+#top-menu #pc {
+	display: block;
+}
+
+#top-menu #mobile {
+	text-align: center;
+	display: none;
+}
+
+#top-menu #mobile #ms-logo {
+	height: 1.5em;
+	display: inline-block;
+	flex: 1 1 auto;
+	padding: 1em;
+	/* [disabled]width: 100%; */
+}
+
+#top-menu #mobile #right-area {
+	position: absolute;
+	right: 0px;
+	padding: 1em;
+	display: block;
+	top: 0px;
+}
+#top-menu #mobile #right-area .icon {
+	display: inline-block;
+	margin-left: 1em;
+}
+#mobile #right-area #search-button {
+	color: rgba(255,255,255,0.5);
+}
+
+
+#top-menu #mobile #button-menu::after {
+}
+
+
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #top-menu .item {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	cursor: pointer;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: relative;
+    }
+#xbox .item .sub-menu {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: -1px;
+	width: 16em;
+	border-left: solid 1px rgba(255,255,255,0.5);
+	border-right: solid 1px rgba(255,255,255,0.5);
+	border-bottom: solid 2px white;
+	background-color: #171717;
+}
+.item .sub-menu .sub-menu-item:hover {
+	background-color: #2f2f2f;
+}
+
+.item .sub-menu .sub-menu-item {
+	padding: 1em;
+	display: block;
+}
+
+
+#top-menu #xbox .item.selected {
+	border-left: 1px solid rgba(255,255,255,0.5);
+	border-right: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 0px solid rgba(255,255,255,0.5);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	background-color: #171717;
+}
+#top-menu #xbox .selected .sub-menu {
+	display: block;
+}
+
+
+
+
+#top-menu #xbox .item::after {
+	font-family: icon;
+	content: "\E70D";
+	vertical-align: middle;
+	margin-left: 0.2em;
+	font-size: 0.8em;
+}
+#top-menu.extended #xbox .item::  after{
+	font-family: icon;
+	content: "\E013";
+	vertical-align: middle;
+	margin-left: 0.2em;
+	font-size: 0.8em;
+}
+
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #top-menu #ms img {
+        height: 1.3em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #top-menu #xbox img {
+        height: 1.7em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #top-menu #xbox {
+	white-space: nowrap;
+	margin: auto;
+	max-width: 85em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #top-menu #ms {
+	white-space: nowrap;
+	overflow: hidden;
+	margin: auto;
+	max-width: 85em;
+	align-content: stretch;
+	display: flex;
+	flex-flow: row nowrap;
+    }
+#top-menu.extended #pc #ms {
+	display: none;
+}
+#pc.extended #xbox img {
+	display: none;
+}
+
+
+#top-menu #ms #left-area {
+	flex: 0 1 auto;
+	align-self: stretch;
+	width: auto;
+	overflow: hidden;
+	position: relative;
+}
+/* http://localhost:8049/xbox-one-x.html */
+    #top-menu #ms #right-area {
+	width: 18em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	position: relative;
+	flex: 1 1 auto;
+	align-self: stretch;
+    }
+#ms #right-area #sign-in {
+	vertical-align: middle;
+	margin-left: 1em;
+}
+
+
+/* http://localhost:8049/xbox-one-x.html */
+.textbox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 1px rgba(255,255,255,0.5);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#ms #right-area #search {
+	color: white;
+	width: calc(100% - 12em);
+}
+#ms #right-area #shopping-cart::before {
+	content: "\E7BF";
+	font-family: icon;
+}
+
+
+
+/* http://localhost:8049/xbox-one-x.html */
+.with-background .background {
+    position: absolute;
+    margin: auto;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.with-background {
+    position: relative;
+    overflow: hidden;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order {
+    height: 1300px;
+    background-image: url("img/b2be5091-4331-413c-8b10-1c4b1ded2ac9.jpg");
+    background-position: center;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.with-background .text-area {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#pre-order .text-area {
+}
+
+
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order .text-area {
+    margin-top: 10em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+p {
+    margin: 0px;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order #buttons {
+    margin-top: 1.5em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.button {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: solid 2px #5bc127;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order #watch-video {
+    margin-left: 2em;
+    font-weight: bold;
+}
+#pre-order #buttons #watch-video::before {
+	font-family: icon;
+	color: inherit;
+}
+
+
+/* http://localhost:8049/xbox-one-x.html */
+#part-4k {
+    height: 1080px;
+    background-image: url("img/137751d5-2004-4e49-b8cd-499eb4a73e73.jpg");
+    background-position: center;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #part-4k .text-area {
+        margin-top: 8em;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console #background {
+    background-image: url("img/030161a8-95b0-4569-a419-6fba95889be9.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console #text-area {
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom:;
+    margin-bottom: 20em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console {
+    background-color: transparent;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.pending-video {
+    position: relative;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    .pending-video video {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    .pending-video .poster {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .float-blocks .block {
+	text-align: left;
+	display: inline-block;
+	width: 22em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	background-color: rgba(40, 40, 40, 0.9);
+	border-bottom: 2px solid #5bc127;
+}
+#powerful-console .float-blocks .block {
+}
+#powerful-console .float-blocks .block {
+}
+.item.item-1 .details #special {
+}
+
+
+
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .blocks .text-area {
+    padding:;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .blocks .text-area {
+    padding: 2em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .text-area {
+    paddint:;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .text-area {
+    padding:;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .text-area {
+    padding: 2em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .title {
+    font-weight:;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .title {
+    font-weight: bold;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .words {
+    font-size:;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .words {
+    font-size: 2.4em;
+    font-weight:;
+    font-weight: lighter;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .text {
+    margin-top:;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .block .text {
+    margin-top: 1em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #top #background {
+	background-color: #171717;
+	height: 140%;
+	width: 100%;
+	position: absolute;
+	top: calc((-140% + 1em)/2);
+	z-index: -1;
+	transform: skewY(-3deg);
+	cursor: pointer;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #bottom {
+    height: 6em;
+    position: relative;
+    text-align: center;
+    top: -6em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    .fold-area #bottom #background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #171717;
+        top: -50%;
+        transform: skewY(-3deg);
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #fold {
+	background-color: #2e2e2e;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #fold {
+    position: relative;
+    top: -6em;
+    padding-top: 6em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area > #top {
+	text-align: center;
+	height: 6em;
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #fold #top {
+    margin-top: 8em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs {
+	text-align: center;
+	margin-top: 5em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #tech-specs #img-text .item {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 7em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #tech-specs #img-text img {
+        width: 100%;
+        box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #tech-specs #img-text .text-area {
+        margin-top: 3em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #tech-specs #img-text .title {
+        font-size: 2em;
+        font-weight: lighter;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #tech-specs #img-text .text {
+        width: 40em;
+        margin: auto;
+        margin-top: 1em;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #tech-specs #properties {
+        margin-top: 10em;
+    }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .item > #background {
+            background-image: url("img/background-1.min.png");
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform-origin: center 50% 0px;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .title {
+            font-size: 2em;
+            position: relative;
+            color: white;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties > .item {
+            padding-top: 6em;
+            position: relative;
+        }
+#fold #properties #connectivity {
+	padding-bottom: 7em;
+
+}
+
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .item-1 > #background {
+            transform: skewY(3deg);
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .item-2 > #background {
+            transform: skewY(-3deg);
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .details {
+	position: relative;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	flex-wrap: wrap;
+        }
+
+            /* http://localhost:8049/xbox-one-x.html */
+            #tech-specs #properties .details .item {
+	text-align: center;
+	padding: 3em;
+	height: 8em;
+	width: 8em;
+	margin-top: 1em;
+            }
+
+            /* http://localhost:8049/xbox-one-x.html */
+            #tech-specs #properties .details .item-1 {
+            }
+
+            /* http://localhost:8049/xbox-one-x.html */
+            #tech-specs #properties .details .item-N {
+                border-left: solid 2px rgba(0,0,0,0.5);
+            }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .summary .unit {
+            font-size: 1.8em;
+            margin-left: -0.1em;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .summary .num {
+            font-size: 3.5em;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #tech-specs #properties .description {
+            display: inline-block;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 1em;
+        }
+/* style.css (276, 37) */
+.fold-area #bottom #background {
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    background-color: #171717;
+    top: -50%;
+    transform: skewY(-3deg);
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#people-words {
+    position: relative;
+    background-color: #171717;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #people-words #text-area .item {
+        padding-top: 5em;
+        height: 200px;
+        background-color: #171717;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #people-words .words {
+        font-size: 2em;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #people-words .name {
+        height: 1em;
+        text-align: center;
+        margin-top: 5em;
+    }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #people-words .name img {
+            height: 100%;
+            display: inline-block;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #people-words .name div {
+            display: inline-block;
+            margin-left: 1em;
+        }
+
+/* http://localhost:8049/xbox-one-x.html */
+.slide-block #slide-area {
+    position: relative;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.slide-block #slide-area .item {
+    position: absolute;
+    width: 100%;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#people-words #slide-area {
+    height: 300px;
+}
+
+/* style.css (471, 16) */
+#people-words {
+    position: relative;
+    background-color: #171717;
+    padding-bottom: 2em;
+}
+#people-words #buttons #left {
+}
+#people-words #buttons #left::after {
+	font-family: icon;
+	padding-top: 1em;
+	padding-right: 0.2em;
+	padding-left: 0.2em;
+	padding-bottom: 1em;
+	content: "\E76b";
+	background-color: black;
+	position: absolute;
+	top: 30%;
+	z-index: 10;
+}
+#people-words #buttons #right::after {
+	font-family: icon;
+	padding-top: 1em;
+	padding-right: 0.2em;
+	padding-left: 0.2em;
+	padding-bottom: 1em;
+	content: "\E76C";
+	background-color: black;
+	position: absolute;
+	top: 30%;
+	z-index: 10;
+	right: 1em;
+}
+
+
+
+    /* style.css (477, 26) */
+    #people-words #slide-area .item {
+        padding-top: 5em;
+        height: 200px;
+        background-color: #171717;
+    }
+
+/* style.css (515, 21) */
+.slide-block #slide-area .item {
+    position: absolute;
+    width: 100%;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.dot::after {
+    font-family: "icon";
+    content: "\EA3A";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#people-words #play::after {
+    content: "\E103";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.slide-block #nav {
+    text-align: center;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#people-words #nav * {
+    vertical-align: middle;
+}
+#bottom #nav .dot {
+	display: inline-block;
+}
+
+
+/* http://localhost:8049/xbox-one-x.html */
+.dot {
+	font-size: 0.4em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#people-words #play {
+    margin-left: 1.5em;
+}
+/* style.css (97, 31) */
+.with-background .background {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-around #wrap img {
+	width: 100%;
+	position: absolute;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-around #wrap {
+	width: 100vw;
+	height: 37.5vw;
+	overflow: hidden;
+	position: relative;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#slide-bar {
+    position: relative;
+    height: 1px;
+    padding: 1em;
+    width: 10em;
+    margin: auto;
+    margin-top: 1em;
+    cursor: e-resize;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #slide-bar #background {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-around {
+    background-color: #171717;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#slide-bar #slide-block {
+    background-color: #5bc127;
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#slide-block #block {
+    height: 100%;
+    width: 100%;
+    background-color: #5bc127;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-around p {
+    text-align: center;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images {
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-color: #171717;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-images #container {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-images #container .item {
+	width: 25vw;
+	margin: 2px;
+	height: 16.6317vw;
+	overflow: hidden;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-images img {
+	width: 100%;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#again-4k {
+	width: 100vw;
+	height: 56.25vw;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #again-4k .text-area {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-flow: column nowrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+/* style.css (312, 19) */
+.fold-area #fold {
+    position: relative;
+    top: -6em;
+    padding-top: 6em;
+    overflow: hidden;
+}
+
+/* style.css (553, 33) */
+.slide-block #slide-area .item {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #detail {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-images #detail .slide-block {
+        width: 100%;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #details .slide-block {
+    position: relative;
+    border-top: solid 6px rgba(255,255,255,0.2);
+    border-bottom: solid 6px rgba(255,255,255,0.2);
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #details {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-images #details #slide-area {
+        height: 56.25vw;
+        width: 100vw;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+.icon-button {
+    font-family: icon;
+    display: inline-block;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #details #play::after {
+    content: "\E102";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images .dot {
+    vertical-align: middle;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #play {
+    vertical-align: middle;
+    margin-left: 2em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #details .active::after {
+    content: "\EA3B";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #details #bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 1em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#more-4k #container {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#more-4k .item {
+    width: 12em;
+    text-align: center;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#more-4k {
+	padding-bottom: 5em;
+	position: relative;
+	padding-top: 4em;
+	background-color: #171717;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #more-4k .item img {
+        width: 5em;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details {
+    background-color: #171717;
+    text-align: center;
+    position: relative;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#more-4k .item #text {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #top #icon {
+    font-family: icon;
+    color: #5bc127;
+    padding: 0.3em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #top .fold::after {
+    content: "\E10A";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #top .show::after {
+    content: "\E109";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #top #click-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details #fold {
+    background-color: #2f2f2f;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details .item img {
+    width: 100%;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details #summary {
+    font-size: 2.1em;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details #description {
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details #slide-area {
+    width: 100%;
+    height: 32.25vw;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.4);
+    background-color: transparent;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details #fold > .item {
+    padding: 7vw;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details .slide-block #slide-area img {
+    box-shadow: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details .slide-block {
+    position: relative;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #gaming-details .slide-block #bottom {
+        top: 0px;
+        margin-top: 1em;
+        font-size: 1.2em;
+        font-weight: 600;
+        height: auto;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #gaming-details .slide-block .tag {
+        display: inline-block;
+        padding: 0.5em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #top #icon::after {
+    content: "\E109";
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#gaming-details .slide-block #nav .active {
+    border-bottom: solid 2px #5dc21f;
+    color: white;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k {
+    background-color: #171717;
+    position: relative;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k > #title {
+        text-align: center;
+        font-size: 3em;
+        font-weight: lighter;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k > #description {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.2em;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.75);
+        text-align: center;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k > #games {
+        margin-top: 4em;
+    }
+/* style.css (936, 11) */
+#play-4k {
+    background-color: #171717;
+    position: relative;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+    /* style.css (961, 24) */
+    #play-4k > #games {
+        margin-top: 4em;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        height: 80em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .item > #background {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #detail-button .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #detail-button * {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .item #summary .normal {
+    height: 27vw;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal #detail-button {
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: calc(100% - 6em);
+    width: calc(100% - 5em);
+    text-align: right;
+    cursor: pointer;
+    padding-right: 5em;
+    padding-top: 6em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .item {
+    align-self: stretch;
+    overflow: hidden;
+    position: relative;
+    border-top: solid 1px;
+    border-image: linear-gradient(to right,rgba(255,255,255,0),white,rgba(255,255,255,0));
+    border-image-slice: 1;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #summary {
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-size: cover;
+}
+#games #sea-of-thieves #summary {
+}
+
+#games #crackdown-3 #summary {
+}
+
+#games #state-of-decay-2 #summary {
+}
+
+
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #detail-button {
+    z-index: 10;
+}
+#play-4k #games .fold #detail-button {
+
+}
+
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal .logo {
+    left: 4em;
+    top: 6em;
+    position: absolute;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .fold #summary {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .extended #summary {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .extended {
+    border: solid 1px rgba(255,255,255,1);
+    flex: 1 0 auto;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .fold {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k #games .fold:hover {
+        background-color: transparent;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #detail-button .icon::before {
+    padding: 0.3em;
+    border: solid 1px #5dc21f;
+    content: "\E109";
+    color: #5dc21f;
+    font-size: 0.75em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #detail-button #icon:hover {
+    letter-spacing: 0.2em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .normal #detail-button #text {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .normal #detail-button .icon::after {
+    content: "SEE DETAILS";
+    font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    margin-left: 1em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .normal #detail-button:hover {
+    letter-spacing: 0.2em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .fold #detail-button #text {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    color: rgba(180, 180, 180, 1);
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal {
+    flex: 1 1 auto;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .fold {
+    flex: 0 1 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 4em;
+    cursor: pointer;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .fold #detail-button .icon::before {
+    font-size: 0.6em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .extended #close-button {
+    position: absolute;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k .extended #close-button::after {
+        font-family: icon;
+        content: "\E10A";
+        border: solid 1px rgba(255,255,255,0.6);
+        padding: 0.1em;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .extended #close-button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 0.2em;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .extended #detail-button {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .extended #details {
+    margin: 5em;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .normal #details {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .fold #details {
+    display: none;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #productor {
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #name {
+    font-size: 3em;
+    font-weight: lighter;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #more-details {
+    display: inline-block;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k #games #more-details::after {
+        font-family: icon;
+        content: "\E013";
+        vertical-align: middle;
+        margin-left: 1em;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #watch-video {
+    margin-left: 3em;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #play-4k #games #watch-video::before {
+        font-family: icon;
+        content: "\E102";
+        vertical-align: middle;
+        margin-right: 1em;
+        font-weight: bold;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .extended:focus {
+    border: solid 1px rgba(255,255,255,1);
+}
+/* http://localhost:8049/xbox-one-x.html */
+#blockbusters {
+    background-color: #171717;
+    padding: 7%;
+    padding: 7vw;
+    padding-top: 10em;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #blockbusters #title {
+        font-size: 3em;
+        font-weight: lighter;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #blockbusters .pending-video {
+        margin-top: 3em;
+        height: 37.62vw;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#enhached {
+    padding: 7vw;
+    background-color: #171717;
+    padding-top: 0px;
+    text-align: center;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #enhached #xbox-one-x {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #enhached #description {
+        margin-top: 1em;
+        padding-left: 4em;
+        padding-right: 4em;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+.goto {
+    font-weight: bold;
+    color: #5dc21f;
+    cursor: pointer;
+}
+#text-border .goto {
+}
+
+
+    /* http://localhost:8049/xbox-one-x.html */
+    .goto::after {
+        font-family: icon;
+        content: "\E013";
+        margin-left: 1em;
+        vertical-align: middle;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#enhached .goto {
+    font-size: 0.8em;
+    margin-top: 2em;
+    display: block;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatible img {
+    width: 100%;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details {
+    background-color: #171717;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatible {
+    background-color: #171717;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #compatible #component {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #compatible .item {
+        width: 8em;
+        padding: 1em;
+    }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #compatible .item img {
+            max-width: 4em;
+            max-height: 3em;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #compatible .item p {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 1em;
+        }
+
+/* http://localhost:8049/xbox-one-x.html */
+.fold-area #top #icon::after {
+    content: "\E109";
+    border: solid 1px #5bc127;
+    padding: 0.3em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details #details {
+    padding-top: 2em;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 9em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details #fold {
+    background: #2f2f2f;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details .item {
+    margin-top: 5em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #compatibility-details .item .text-area {
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #compatibility-details .item img {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+    }
+#details .item .pc {
+}
+
+#details .item .mobile {
+	display: none;
+}
+
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #compatibility-details .item #summary {
+        font-size: 1.3em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #compatibility-details .item #description {
+        margin-top: 1em;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-live #background {
+	background-image: url(img/c58a872e-4ea9-410d-8191-5cd73b446167.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100vw;
+	height: 83.38vw;
+	position: relative;
+	top: -6em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details #bottom #background {
+    height: 100%;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-live {
+    position: relative;
+    text-align: center;
+    background-color: #171717;
+    padding-bottom: 10em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-live .summary {
+        font-size: 4em;
+        font-weight: lighter;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        position: relative;
+        top: -2em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-live #details {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: center;
+        top: -10em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #xbox-live .item {
+	width: 25em;
+	padding: 1em;
+	text-align: left;
+    }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #xbox-live .item #title {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #xbox-live .item #description {
+            margin-top: 2em;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again {
+    background-color: #171717;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #pre-order-again #text-area {
+        padding: 5em;
+        padding-bottom: 2em;
+    }
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #pre-order-again #notice {
+        margin-top: 1em;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #pre-order-again #notice p {
+            margin-top: 1em;
+        }
+
+/* http://localhost:8049/xbox-one-x.html */
+#footer {
+	background-color: #f2f2f2;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 0.8em;
+	padding: 3em;
+	padding-top: 0em;
+	padding-bottom: 2em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #footer .block {
+	display: inline-block;
+	vertical-align: top;
+	width: 22em;
+	margin-top: 4em;
+    }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #footer .block a {
+            display: block;
+            cursor: pointer;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #footer .block #title {
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+
+        /* http://localhost:8049/xbox-one-x.html */
+        #footer .block .item {
+            margin-top: 1em;
+        }
+
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again > img {
+    width: 100%;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#footer #region::before {
+    font-family: icon;
+    content: "\E128";
+    font-size: 1.8em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+/* http://localhost:8049/xbox-one-x.html */
+#footer #bottom #links {
+    display: inline-block;
+    margin-left: 7em;
+    font-size: 0.9em;
+}
+
+    /* http://localhost:8049/xbox-one-x.html */
+    #footer #bottom #links a {
+        margin-left: 2em;
+    }
+
+/* http://localhost:8049/xbox-one-x.html */
+#footer #bottom {
+    margin-top: 4em;
+}
+#pre-order #buttons #watch-video::before {
+	font-family: icon;
+	color: #5dc21f;
+	content: "\E768";
+	margin-right: 1em;
+}
+.text-area #buttons #pre-order::after {
+	font-family: icon;
+	content: "\E76C";
+	font-size: 0.8em;
+	margin-left: 1em;
+	vertical-align: middle;
+}
+
+
+
+@media (min-width : 1440px ){
+#powerful-console .float-blocks .block {
+	margin-left: 20%;
+	margin-right: 20%;
+	width: 25em;
+
+
+}
+.item.item-1 .details #special {
+	border-left: solid 1px black;
+
+}
+#play-4k #games .fold #detail-button {
+
+}
+#play-4k #games .fold #detail-button {
+
+}
+#play-4k #games .fold #detail-button {
+
+}
+#play-4k #games .fold #detail-button {
+	display: block;
+}
+
+
+
+
+
+
+}
+
+@media (min-width:1280px) and (max-width:1440px){
+#powerful-console .float-blocks .block {
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+#fold #properties #connectivity {
+	padding-left: 6em;
+	padding-right: 6em;
+
+}
+
+
+}
+
+@media ( max-width : 1280px ) and (min-width : 1028px ){
+#powerful-console .float-blocks .block {
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+}
+
+@media (max-width:1028px) and (min-width:800px){
+#powerful-console .float-blocks .block {
+	margin-left: 5em;
+	margin-right: 5em;
+
+
+}
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #properties .details .item {
+	text-align: center;
+	padding: 3em;
+	height: 8em;
+	width: 16%;
+	margin-top: 1em;
+            }
+
+
+}
+
+@media (min-width:1024px) and (max-width:1440px){
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #properties .details .item {
+	text-align: center;
+	padding: 3em;
+	height: 8em;
+	width: 7%;
+	margin-top: 1em;
+            }
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #properties .details .item {
+
+            }
+
+
+}
+
+@media (max-width:800px){
+#top-menu #mobile {
+	text-align: center;
+	display: block;
+}
+#top-menu #pc {
+	display: none;
+
+}
+#top-menu.extended #pc {
+	display: block;
+	background-color: rgb(242, 242, 242);
+	color: black;
+}
+
+#pre-order .text-area {
+	margin-top: 4em;
+
+}
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console .float-blocks .block {
+	text-align: left;
+	display: block;
+	margin-top: 8em;
+	margin-bottom: 3em;
+	background-color: rgba(40, 40, 40, 0.9);
+	border-bottom: 2px solid #5bc127;
+	margin-left: 3em;
+	margin-right: 3em;
+	width: calc(100% - 6em);
+}
+/* http://localhost:8049/xbox-one-x.html */
+#powerful-console {
+	background-color: transparent;
+	padding-bottom: 10em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #properties .details .item {
+	text-align: center;
+	padding: 3em;
+	height: 8em;
+	width: 8em;
+	border: none;
+	margin-top: 1em;
+            }
+/* http://localhost:8049/xbox-one-x.html */
+#tech-specs #properties .details {
+	position: relative;
+	display: flex;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	vertical-align: middle;
+	flex-flow: column wrap;
+        }
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-images #container .item {
+	width: 40%;
+	margin: 2px;
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#more-4k #container {
+	display: flex;
+	width: 100%;
+	flex-flow: column wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#more-4k .item {
+	width: 12em;
+	text-align: center;
+	margin-top: 3em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k > #games {
+	height: 40em;
+
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal #detail-button {
+	display: block;
+	position: absolute;
+	top: 0px;
+	height: calc(100% - 3em);
+	width: calc(100% - 2em);
+	text-align: right;
+	cursor: pointer;
+	padding-right: 2em;
+	padding-top: 3em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal .logo {
+	left: 1em;
+	top: 26%;
+	position: absolute;
+	width: 40%;
+}
+#details .item .pc {
+	display: none;
+
+}
+#details .item .mobile {
+	display: block;
+	margin: auto;
+	width: calc(100% - 2em);
+}
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details .item .text-area {
+	display: block;
+	vertical-align: middle;
+	width: auto;
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#compatibility-details .item .text-area {
+	text-align: center;
+
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-live #details {
+	padding: 2em;
+
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again #text-area {
+	font-size: 0.9em;
+
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again #text-area {
+	font-size: 0.9em;
+	width: 80%;
+	padding-left: 2em;
+
+    }
+#pre-order-again #text-area #text-border {
+	width: 40vw;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	margin-top: 2em;
+	border-top-color: white;
+	border-bottom-color: white;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+#text-border .goto {
+	display: block;
+	margin-top: 2em;
+
+}
+#pc.extended #xbox img {
+	display: none;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#top-menu.extended #xbox img {
+	height: 1.7em;
+	display: none;
+    }
+#top-menu.extended #xbox .item a {
+	display: inline-block;
+	width: 90%;
+	position: relative;
+}
+
+#top-menu.extended #xbox .item {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width:1280px){
+/* style.css (961, 24) */
+#play-4k > #games {
+	margin-top: 4em;
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: stretch;
+	height: 80em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    }
+#games #forza-motorsport-7 #summary {
+	/* [disabled]background-position-x: 60%; */
+	background-image: url(img/21c23d66-55ec-4ca3-a8da-00d1aa1e2063.jpg);
+
+}
+#games #super-luckys-tale #summary {
+	background-image: url(img/1c8f1b12-fe67-4e35-b5a8-2518c8bc6782.jpg);
+}
+#games #state-of-decay-2 #summary {
+	background-image: url("img/07fd2c72-5d6c-417c-9b93-a6746178de75.jpg");
+
+}
+#games #state-of-decay-2 #summary {
+
+}
+#games #crackdown-3 #summary {
+	background-image: url("img/e01dcd3f-6371-4433-9b18-1a4c38520b3e.jpg");
+
+}
+#games #sea-of-thieves #summary {
+	background-image: url(img/83521ee9-95a1-4c66-ac4b-85e1e836c751.jpg);
+	background-position-x: 0%;
+
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal .logo {
+	position: absolute;
+	top: auto;
+	left: 0px;
+	bottom: 5em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games #detail-button  {
+	z-index: 10;
+	display: none;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .normal #detail-button {
+	display: block;
+	position: absolute;
+	top: auto;
+	width: calc(100% - 5em);
+	text-align: right;
+	cursor: pointer;
+	padding-right: 3em;
+	padding-top: 80em;
+	height: auto;
+	bottom: 0px;
+	padding-left: 2em;
+	padding-bottom: 3em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .item {
+	align-self: stretch;
+	overflow: hidden;
+	position: relative;
+	border-top-style: solid;
+	border-top-width: 0px;
+	border-image: linear-gradient(to right,rgba(255,255,255,0),white,rgba(255,255,255,0));
+	border-image-slice: 1;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #games .item {
+	align-self: stretch;
+	overflow: hidden;
+	position: relative;
+	border-top: solid 1px;
+	border-image: linear-gradient(to bottom,rgba(255,255,255,0),white,rgba(255,255,255,0));
+	border-image-slice: 1;
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-live #background {
+	background-image: url(img/047023b4-0d65-4169-9ec2-d2fe8771eeeb.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100vw;
+	height: 41.667vw;
+	position: relative;
+	top: -6em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#xbox-live .item {
+	width: 20%;
+	padding: 1em;
+	text-align: left;
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again > img {
+	width: 100%;
+	display: none;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again #text-area {
+	padding: 5em;
+	padding-bottom: 2em;
+	margin-left: 50%;
+    }
+/* http://localhost:8049/xbox-one-x.html */
+#pre-order-again {
+	background-image: url("img/7063a222-72db-4661-b998-241810db5542.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+}
+#play-4k #games .fold #detail-button {
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-epub-text-orientation: upright;
+
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k .fold #detail-button #text {
+	display: none;
+	font-weight: 600;
+	font-size: 1.2em;
+	letter-spacing: 0.2em;
+}
+/* http://localhost:8049/xbox-one-x.html */
+#play-4k #detail-button .icon {
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	display: block;
+	text-align: center;
+	bottom: 3em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width:1280px){
+#games #forza-motorsport-7 #summary {
+	background-image: url(img/21c23d66-55ec-4ca3-a8da-00d1aa1e2063.jpg);
+	background-size: 100%;
+	background-position-y: 90%;
+
+}
+#games #super-luckys-tale #summary {
+	background-image: url("img/d8ab1aa1-669b-401b-acb6-c77383265333.jpg");
+	background-size: 130%;
+}
+#games #state-of-decay-2 #summary {
+	background-image: url("img/023c7784-5f5a-41b1-adba-3e5f6a7fe0f3.jpg");
+	background-size: 240%;
+
+}
+#games #crackdown-3 #summary {
+	background-image: url("img/7e1549bb-1bab-4eb0-84a7-ede85bd3c3da.jpg");
+	background-size: 150%;
+
+}
+#games #sea-of-thieves #summary {
+	background-image: url("img/e5965773-fabd-494a-80a3-afa1ec8a5d23.jpg");
+	background-size: 160%;
+
+}
+
+
+
+
+
+
+}
+#pre-order-again #text-area #text-border {
+	width: auto;
+	margin-right: 2em;
+}

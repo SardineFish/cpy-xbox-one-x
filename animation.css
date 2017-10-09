@@ -1,0 +1,48 @@
+﻿@keyframes fold-extend{
+    from{
+    }
+    to{
+        max-height: 8000px;
+    }
+}
+@keyframes fold{
+    from{
+    }
+    to{
+        height: 0px;
+    }
+}
+.fold-area .fold-extend {
+    animation-name: fold-extend;
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.64, 0.04, 0.95, 0.6);
+}
+.fold-area .fold-fold {
+    animation-name: fold;
+    animation-play-state: running;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes zoom{
+    from{
+        
+    }
+    to{
+        width: 150%;
+        transform: translate(-12.5%,-12.5%);
+    }
+}
+
+#xbox-images .item *:hover{
+    animation-name: zoom;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-play-state:running;
+}
